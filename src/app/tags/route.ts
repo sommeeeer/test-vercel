@@ -32,6 +32,6 @@ async function getByTag(tag: string) {
 }
 export async function GET() {
   return Response.json({
-    body: await getByTag('time'),
+    tags: await getByTag('time'),
   });
 }
