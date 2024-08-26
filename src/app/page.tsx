@@ -10,6 +10,12 @@ export default function Home() {
         <Link className="btn btn-primary" href="/path">
           Go to "/path"
         </Link>
+        <Link className="btn btn-primary" href="/my/super/long/path/hello">
+          Go to "/my/super/long/path/[slug]"
+        </Link>
+        <a className="btn btn-secondary" href="/tags">
+          getByTag('time')
+        </a>
       </div>
     </main>
   );
