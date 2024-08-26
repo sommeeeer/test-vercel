@@ -1,5 +1,9 @@
 import Buttons from '@/components/buttons';
 
+export async function generateStaticParams() {
+  return [{ slug: 'hello' }, { slug: 'world' }];
+}
+
 export default async function Page({ params }: { params: { slug: string } }) {
   const res = await fetch('http://worldtimeapi.org/api/timezone/Europe/Oslo', {
     next: {
