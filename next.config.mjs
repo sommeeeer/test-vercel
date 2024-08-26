@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: 'cdn.snurroslo.no',
       },
     ],
+    minimumCacheTTL: 60 * 60 * 24 * 365,
   },
 };
 
