@@ -10,7 +10,7 @@ export default $config({
   },
   async run() {
     new sst.aws.Nextjs('MyWeb', {
-      openNextVersion: '3.0.8',
+      // openNextVersion: '3.0.8',
       buildCommand:
         '/home/lillemagga/Koding/git/open-next/packages/open-next/dist/index.js build',
     });
