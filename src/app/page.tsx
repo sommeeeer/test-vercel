@@ -1,14 +1,16 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Image
-        src={'https://cdn.snurroslo.no/uploads/smakesnurr_main.jpg'}
-        alt="Snurr"
-        width={480}
-        height={640}
-      />
+      <div className="flex flex-col gap-4">
+        <Link className="btn btn-primary" href="/path/to/my">
+          Go to "/path/to/my"
+        </Link>
+        <Link className="btn btn-primary" href="/path">
+          Go to "/path"
+        </Link>
+      </div>
     </main>
   );
 }
